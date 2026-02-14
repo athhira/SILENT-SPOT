@@ -136,17 +136,17 @@ AII GND         GND]
 
 #### Schematic & Circuit
 
-![Circuit Diagram](CIRCUIT DIAGRAM.png) https://drive.google.com/file/d/1jQrOSvdSJgMJ674f8oXfnChGkEdXifDW/view?usp=drive_link
+![Circuit Diagram]https://drive.google.com/file/d/1jQrOSvdSJgMJ674f8oXfnChGkEdXifDW/view?usp=drive_link
 The system is built using an ESP32 DevKit V1 as the main controller. Three sound sensors are connected to the analog input pins (GPIO 36, 39, and 34) to measure noise levels from different areas. Each sensor is powered using the 3.3V and GND pins of the ESP32.
 A 16x2 LCD with I2C module is connected to display real-time noise data. The LCD uses GPIO 21 (SDA) and GPIO 22 (SCL) for communication, along with 3.3V and GND for power.
 All components share a common ground to ensure stable readings. The ESP32 processes the analog values from the sensors and displays the identified noise levels on the LCD.
 
-![Schematic](Add your schematic diagram here)
+![Schematic Dagram](Add your schematic diagram here)
 *Add caption explaining the schematic*
 
 #### Build Photos
 
-![Team](Add photo of your team here)
+![Team Photo]https://drive.google.com/file/d/1E7gYJPl-7GZmr-L9ZzcecN4ESz1jsAjU/view?usp=drive_link
 
 ![Components](Add photo of your components here)
 *List out all components shown*
@@ -154,7 +154,7 @@ All components share a common ground to ensure stable readings. The ESP32 proces
 ![Build](Add photos of build process here)
 *Explain the build steps*
 
-![Final](Add photo of final product here)
+![Final Project]https://drive.google.com/drive/folders/14p0shKks6BTYaBdWORpwvO4htn89uKKn?usp=drive_link
 *Explain the final build*
 
 ---

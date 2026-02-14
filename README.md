@@ -2,7 +2,7 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [SILENT SPOT] 🎯
+# [SILENT SPOT] 
 
 ## Basic Details
 

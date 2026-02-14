@@ -141,8 +141,8 @@ The system is built using an ESP32 DevKit V1 as the main controller. Three sound
 A 16x2 LCD with I2C module is connected to display real-time noise data. The LCD uses GPIO 21 (SDA) and GPIO 22 (SCL) for communication, along with 3.3V and GND for power.
 All components share a common ground to ensure stable readings. The ESP32 processes the analog values from the sensors and displays the identified noise levels on the LCD.
 
-![Schematic Dagram](Add your schematic diagram here)
-*Add caption explaining the schematic*
+![Schematic Dagram]https://drive.google.com/file/d/11ISdlDvOfi3SlKEb6KrO4LbNUGR0sw9v/view?usp=drivesdk
+This schematic illustrates an automated noise monitoring system designed to identify the quietest environmental zone using an ESP32 Dev Kit as the central processor. The system utilizes three analog sound sensors, each assigned to a specific area, which convert ambient noise into measurable voltage levels. These signals are fed into the ESP32’s analog-to-digital converter (ADC) pins—specifically GPIO 33, 34, and 35—where the microcontroller compares the values in real-time. To ensure hardware safety and signal integrity, the sensors are powered by the 3V3 rail, matching the ESP32’s native logic level. The final output is handled via an I2C-connected LCD 16x2, which displays the decibel-relative readings and identifies the optimal "Go to" location. This setup creates a continuous feedback loop, transitioning from raw data acquisition to user-facing information, all powered by a stable 5V USB source.
 
 #### Build Photos
 

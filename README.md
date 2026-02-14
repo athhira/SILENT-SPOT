@@ -149,7 +149,9 @@ All components share a common ground to ensure stable readings. The ESP32 proces
 ![Team Photo]https://drive.google.com/file/d/1E7gYJPl-7GZmr-L9ZzcecN4ESz1jsAjU/view?usp=drive_link
 
 ![Components](Add photo of your components here)
-*List out all components shown*
+ESP32           https://drive.google.com/file/d/1EX1nwBuWhy3mRBO4m55sGwac_N3i6TyM/view?usp=sharing
+SoundSensors    https://drive.google.com/file/d/1Udv1-psIP6mcRpTM9kb-Xuanpv2NoLtR/view?usp=sharing
+16*2 I2C LCD    https://drive.google.com/file/d/1Gk4JAXe-vHVM3e08Z_u0SWFYn0qOlj89/view?usp=sharing
 
 ![Build](Add photos of build process here)
 *Explain the build steps*

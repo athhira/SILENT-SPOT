@@ -54,7 +54,7 @@ This system helps maintain a peaceful academic environment by identifying noise-
 **For Hardware:**
 - Main components: [ESP32 DevKit V1,Sound sensor module,Power supply,Connecting Wires,LCD Display]
 - Specifications: [ESP32,SOUND SENSOR,LCD Display]
-- Tools required: [Breadboard,Jumper Wires,USB Cble,Laptop with Arduino IDE]
+- Tools required: [Jumper Wires,USB Cble,Laptop with Arduino IDE]
 
 ---
 
@@ -88,7 +88,7 @@ List the key features of your project:
 [ESP32 DevKit V1 (WiFi mirocontroller,240MHz,12-bit ADC)
 3Sound Sensors(Analog Output,3.3-5V)
 16*2 12C LCD(SDA-21,SCL-22
-BreadBoard & Jumper Wires
+,Jumper Wires
 5 USB Power Supply]
 
 #### Circuit Setup
@@ -254,11 +254,10 @@ xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
 | ESP32 Dev Board | 1 | WiFi +Bluetooth,240MHz,3.3V | 400-600/- | [Link] |
 | Sound Sensor Module  | 3 | Analog Output 3.3V Compactable | 300-450/- | [Link] |
 | 16*2 LCD Display(I2C) | 1 | 5V/3.3V Compactable,I2C Interface | 150-250/- | [Link] |
-| Breadboard | 1 | 830 tiepoints | 100/- | [Link] |
 | Jumper Wires | 15 | Male-to-Male | 50/- | [Link] |
 | USB Cable | 1 | For Powering ESP32 | 100-150/- | |
 
-**Total Estimated Cost:** [1100-1600/-]
+**Total Estimated Cost:** [1000-1500/-]
 
 #### Assembly Instructions
 
@@ -273,8 +272,8 @@ Step 2: Power Connections
 
 Step 3: Connect Sound Sensor – Area 1
 1.Each sound sensor module has 3 pins: VCC, GND, OUT
-2.VCC → Breadboard + rail (3.3V)
-3.GND → Breadboard – rail (GND)
+2.VCC → +rail (3.3V)
+3.GND – -rail (GND)
 4.OUT → GPIO 36 of ESP32
 
 Step 4: Connect Sound Sensor – Area 2
@@ -421,12 +420,11 @@ https://drive.google.com/file/d/1aEVWis8pNTvH9xkTkffzy3Ga6aEc-AxZ/view?usp=shari
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** [e.g., Gamma ai, ChatGPT]
 
 **Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
+- Example: Chat GPT for brainstorming  and debugging errors.
+- Example: Gamma ai for preparing ppt for better understanding.
 
 **Key Prompts Used:**
 - "Create a REST API endpoint for user authentication"

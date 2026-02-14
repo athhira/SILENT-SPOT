@@ -70,17 +70,6 @@ List the key features of your project:
 
 ## Implementation
 
-### For Software:
-
-#### Installation
-```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
-
-#### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
 
 ### For Hardware:
 
@@ -109,14 +98,8 @@ AII GND         GND]
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Wokwi](https://drive.google.com/file/d/1xSXVYn7ILbHKnJjL8dDkSUiUUnTHW6eC/view?usp=sharing)
+A part of project where we used Wokwi for hardware simulation.
 
 #### Diagrams
 

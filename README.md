@@ -2,27 +2,42 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [SILENT SPOT] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [GENESIS HACK]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [ATHIRA M] - [RAJIV GANDHI INSTITUTE OF TECHNOLOGY]
+- Member 2: [KEERTHANA ROSE TONY] - [RAJIV GANDHI INSTITUTE OF TECHNOLOGY]
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[An IoT-based system that monitors noise levels across three different areas in real-time using ESP32 microcontrollers and noise sensors. The system continuously collects sound data (30-100 dB), processes it, and uploads readings every 2 seconds to a Supabase cloud database. Users can access a web dashboard that displays live noise levels with color-coded indicators and automatically recommends the quietest available space. The solution helps students, remote workers, and facility managers quickly find peaceful environments without wasting time searching. Built with ESP32 hardware, Supabase backend, and a React-based frontend for seamless real-time monitoring and data visualization.]
 
 ### The Problem statement
-[What problem are you solving?]
+[In campus and hostel environments, fluctuating noise levels negatively impact students' concentration and academic performance. Currently, there is no cost-effective and scalable system to monitor, classify, and identify optimal low-noise zones in real time. This creates a need for an intelligent acoustic monitoring solution.]
 
 ### The Solution
-[How are you solving it?]
+[This project is a real-time noise monitoring system designed to identify low and high noise zones within a college campus or hostel environment.
+
+The system uses an ESP32 DevKit V1 microcontroller connected to multiple sound sensors placed in different areas. Each sensor continuously measures ambient sound levels and sends analog data to the ESP32.
+
+The ESP32:
+Reads sound intensity from each area
+Compares noise levels
+Identifies the quietest zone
+Displays real-time results on a 16x2 I2C LCD
+
+The solution is scalable and can be extended by:
+Connecting to Wi-Fi
+Sending data to cloud platforms
+Creating a web or mobile dashboard for live monitoring
+
+This system helps maintain a peaceful academic environment by identifying noise-prone areas and promoting awareness.]
 
 ---
 
@@ -31,25 +46,25 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [HTML,CSS,JAVA SCRIPT,C++]
+- Frameworks used: [Arduino Framework for ESP32]
+- Libraries used: [WiFi.h,LiquidCrystal_12C.h]
+- Tools used: [Wokwi Stimulator,Arduino IDE,Supabase]
 
 **For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Main components: [ESP32 DevKit V1,Sound sensor module,Power supply,Connecting Wires,LCD Display]
+- Specifications: [ESP32,SOUND SENSOR,LCD Display]
+- Tools required: [Breadboard,Jumper Wires,USB Cble,Laptop with Arduino IDE]
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [Multi-Area Noise Monitoring]
+- Feature 2: [Real-Time Noise Detection]
+- Feature 3: [WiFi Based Data Transmission]
+- Feature 4: [Live LCD Display]
 
 ---
 
@@ -70,10 +85,21 @@ List the key features of your project:
 ### For Hardware:
 
 #### Components Required
-[List all components needed with specifications]
+[ESP32 DevKit V1 (WiFi mirocontroller,240MHz,12-bit ADC)
+3Sound Sensors(Analog Output,3.3-5V)
+16*2 12C LCD(SDA-21,SCL-22
+BreadBoard & Jumper Wires
+5 USB Power Supply]
 
 #### Circuit Setup
-[Explain how to set up the circuit]
+[Component      ESP32 PIN
+Sensor1 OUT     GPIO 36
+Sensor2 OUT     GPIO 39
+Sensor3 OUT     GPIO 34
+LCD SDA         GPIO 21
+LCD SCL         GPIO 22
+AII VCC         3.3V
+AII GND         GND]
 
 ---
 
@@ -110,8 +136,10 @@ List the key features of your project:
 
 #### Schematic & Circuit
 
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+![Circuit Diagram](CIRCUIT DIAGRAM.png)
+The system is built using an ESP32 DevKit V1 as the main controller. Three sound sensors are connected to the analog input pins (GPIO 36, 39, and 34) to measure noise levels from different areas. Each sensor is powered using the 3.3V and GND pins of the ESP32.
+A 16x2 LCD with I2C module is connected to display real-time noise data. The LCD uses GPIO 21 (SDA) and GPIO 22 (SCL) for communication, along with 3.3V and GND for power.
+All components share a common ground to ensure stable readings. The ESP32 processes the analog values from the sensors and displays the identified noise levels on the LCD.
 
 ![Schematic](Add your schematic diagram here)
 *Add caption explaining the schematic*
@@ -221,44 +249,61 @@ xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
 
 | Component | Quantity | Specifications | Price | Link/Source |
 |-----------|----------|----------------|-------|-------------|
-| Arduino Uno | 1 | ATmega328P, 16MHz | ₹450 | [Link] |
-| LED | 5 | Red, 5mm, 20mA | ₹5 each | [Link] |
-| Resistor | 5 | 220Ω, 1/4W | ₹1 each | [Link] |
-| Breadboard | 1 | 830 points | ₹100 | [Link] |
-| Jumper Wires | 20 | Male-to-Male | ₹50 | [Link] |
-| [Add more...] | | | | |
+| ESP32 Dev Board | 1 | WiFi +Bluetooth,240MHz,3.3V | 400-600/- | [Link] |
+| Sound Sensor Module  | 3 | Analog Output 3.3V Compactable | 300-450/- | [Link] |
+| 16*2 LCD Display(I2C) | 1 | 5V/3.3V Compactable,I2C Interface | 150-250/- | [Link] |
+| Breadboard | 1 | 830 tiepoints | 100/- | [Link] |
+| Jumper Wires | 15 | Male-to-Male | 50/- | [Link] |
+| USB Cable | 1 | For Powering ESP32 | 100-150/- | |
 
-**Total Estimated Cost:** ₹[Amount]
+**Total Estimated Cost:** [1100-1600/-]
 
 #### Assembly Instructions
 
-**Step 1: Prepare Components**
-1. Gather all components listed in the BOM
-2. Check component specifications
-3. Prepare your workspace
-![Step 1](images/assembly-step1.jpg)
-*Caption: All components laid out*
+Step 1: Prepare the Workspace
+1.Place the breadboard on a flat surface.
+2.Mount the ESP32 DevKit V1 on one side of the breadboard.
+3.Ensure the ESP32 is not powered while wiring.
 
-**Step 2: Build the Power Supply**
-1. Connect the power rails on the breadboard
-2. Connect Arduino 5V to breadboard positive rail
-3. Connect Arduino GND to breadboard negative rail
-![Step 2](images/assembly-step2.jpg)
-*Caption: Power connections completed*
+Step 2: Power Connections
+1.Connect ESP32 3.3V pin to the breadboard positive rail.
+2.Connect ESP32 GND pin to the breadboard negative rail.
 
-**Step 3: Add Components**
-1. Place LEDs on breadboard
-2. Connect resistors in series with LEDs
-3. Connect LED cathodes to GND
-4. Connect LED anodes to Arduino digital pins (2-6)
-![Step 3](images/assembly-step3.jpg)
-*Caption: LED circuit assembled*
+Step 3: Connect Sound Sensor – Area 1
+1.Each sound sensor module has 3 pins: VCC, GND, OUT
+2.VCC → Breadboard + rail (3.3V)
+3.GND → Breadboard – rail (GND)
+4.OUT → GPIO 36 of ESP32
 
-**Step 4: [Continue for all steps...]**
+Step 4: Connect Sound Sensor – Area 2
+1.VCC → 3.3V rail
+2.GND → GND rail
+3.OUT → GPIO 39
 
-**Final Assembly:**
-![Final Build](images/final-build.jpg)
-*Caption: Completed project ready for testing*
+Step 5: Connect Sound Sensor – Area 3
+1.VCC → 3.3V rail
+2.GND → GND rail
+3.OUT → GPIO 34
+
+Step 6: Connect 16x2 LCD (I2C Module)
+1.The I2C LCD has 4 pins: VCC, GND, SDA, SCL
+2.VCC → 3.3V rail
+3.GND → GND rail
+4.SDA → GPIO 21
+5.SCL → GPIO 22
+These are default I2C pins of ESP32.
+
+Step 7: Final Connection Check
+✔ All VCC lines connected to 3.3V
+✔ All GND lines connected together
+✔ Sensor OUT pins connected correctly
+✔ LCD SDA → 21
+✔ LCD SCL → 22
+
+Step 8: Power the System
+1.Connect ESP32 to laptop using USB cable.
+2.Upload the code via Arduino IDE.
+3.Open Serial Monitor to verify readings.
 
 ---
 
